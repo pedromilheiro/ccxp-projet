@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CCXP 22</title>
+</head>
+
+<body>
+    <nav>
+        <h1 id="logoCCXP"><img src="logoCcxp.svg" alt=""></h1>
+    </nav>
+
+    <div id="content">
+        <div id="textContent">
+            <div id="title">
+                <h1>
+                    REVIVA O É EPICO
+                </h1>
+                <h2>
+                    DE 01 A 04 DE DEZEMBRO
+                </h2>
+            </div>
+            <p>
+                Você consegue sentir? É aquela sensação de <br> finalmente poder falar em voz alta: "estamos <br>
+                em casa". Sim, em dezembro de 2022, <br>
+                teremos a volta da CCXP física. Mas não será <br>
+                qualquer CCXP, vai ser a maior de todos os <br>
+                tempos. Prepare-se para visitar seus <br>
+                universos favoritos, explorar o Artists' Valley, <br>
+                se emocionar nos auditórios e encontrar <br>
+                aventuras épicas a cada passo pelos nossos corredores.
+            </p>
+        </div>
+        <div id="videoContent">
+            <div class="countdown">
+                <h1 id="day"> 01D </h1>
+                <div>
+                    <h1 id="hour"> 07H </h1>
+                </div>
+                <div>
+                    <h1 id="min"> 12M </h1>
+                </div>
+                <div>
+                    <h1 id="sec"> 47S </h1>
+                </div>
+            </div>
+            <div>
+                <p id="timerTitle"><strong>PARA A MAIOR CCXP DE TODOS OS TEMPOS</strong></p>
+            </div>
+            <div id="video">
+                <video width="100%" controls loop>
+                    <source src="Arlequina.mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <div id="buyArea">
+        <div>
+            <div id="subTitle">
+                <strong> AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</strong>
+            </div>
+            <div id="ticket">
+                <img id="thursday" class="ticketImg" src="img1.svg" onclick="selectCard('#thursday')"
+                    onmouseover="highlightCard('#thursday')" onmouseout="highlightCard('#thursday')">
+
+                <img id="friday" class="ticketImg" src="img2.svg" onclick="selectCard('#friday')"
+                    onmouseover="highlightCard('#friday')" onmouseout="highlightCard('#friday')">
+
+                <img id="saturday" class="ticketImg" src="img3.svg" onclick="selectCard('#saturday')"
+                    onmouseover="highlightCard('#saturday')" onmouseout="highlightCard('#saturday')">
+
+                <img id="sunday" class="ticketImg" src="img4.svg" onclick="selectCard('#sunday')"
+                    onmouseover="highlightCard('#sunday')" onmouseout="highlightCard('#sunday')">
+            </div>
+        </div>
+        <div id="buyButton">
+            <button onclick="showSelectedCards()">GARANTA O SEU!</button>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
